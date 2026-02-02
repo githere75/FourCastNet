@@ -57,7 +57,7 @@ time_means = np.zeros((1,21,721, 1440))
 
 for ii, year in enumerate(years):
     
-    with h5py.File('/pscratch/sd/s/shas1693/data/era5/train/'+ str(year) + '.h5', 'r') as f:
+    with h5py.File('data/train/'+ str(year) + '.h5', 'r') as f:
 
         rnd_idx = np.random.randint(0, 1460-500)
         global_means += np.mean(f['fields'][rnd_idx:rnd_idx+500], keepdims=True, axis = (0,2,3))

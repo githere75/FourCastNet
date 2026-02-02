@@ -23,7 +23,7 @@ full_field: &FULL_FIELD
   batch_size: 1
 
   #afno hyperparams
-  num_blocks: 8
+  num_blocks: 6
   nettype: 'afno'
   patch_size: 8
   width: 56

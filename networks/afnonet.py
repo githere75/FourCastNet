@@ -189,8 +189,8 @@ class AFNONet(nn.Module):
         self.params = params
         self.img_size = img_size
         self.patch_size = (params.patch_size, params.patch_size)
-        self.in_chans = params.N_in_channels
-        self.out_chans = params.N_out_channels
+        self.in_chans = params.in_channels
+        self.out_chans = params.out_channels
         self.num_features = self.embed_dim = embed_dim
         self.num_blocks = params.num_blocks 
         norm_layer = partial(nn.LayerNorm, eps=1e-6)

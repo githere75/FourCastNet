@@ -87,7 +87,7 @@ def gaussian_perturb(x, level=0.01, device=0):
 def load_model(model, params, checkpoint_file):
     model.zero_grad()
     checkpoint_fname = checkpoint_file
-    checkpoint = torch.load(checkpoint_fname)
+    checkpoint = torch.load(checkpoint_fname, weights_only=False)
     try:
         new_state_dict = OrderedDict()
         for key, val in checkpoint['model_state'].items():

@@ -1,0 +1,88 @@
+Traceback (most recent call last):
+  File "/home/gpuuser0/gpuuser0_a/rohit/rohitg/weather-models/FourCastNet/FourCastNet/fine-tune.py", line 5, in <module>
+    from networks.afnonet import AFNONet
+  File "/home/gpuuser0/gpuuser0_a/rohit/rohitg/weather-models/FourCastNet/FourCastNet/networks/afnonet.py", line 14, in <module>
+    from timm.models.layers import DropPath, trunc_normal_
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/__init__.py", line 2, in <module>
+    from .models import create_model, list_models, is_model, list_modules, model_entrypoint, \
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/models/__init__.py", line 1, in <module>
+    from .beit import *
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/models/beit.py", line 49, in <module>
+    from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/data/__init__.py", line 5, in <module>
+    from .dataset import ImageDataset, IterableImageDataset, AugMixDataset
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/data/dataset.py", line 12, in <module>
+    from .parsers import create_parser
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/data/parsers/__init__.py", line 1, in <module>
+    from .parser_factory import create_parser
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/data/parsers/parser_factory.py", line 3, in <module>
+    from .parser_image_folder import ParserImageFolder
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/data/parsers/parser_image_folder.py", line 11, in <module>
+    from timm.utils.misc import natural_key
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/utils/__init__.py", line 2, in <module>
+    from .checkpoint_saver import CheckpointSaver
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/utils/checkpoint_saver.py", line 15, in <module>
+    from .model import unwrap_model, get_state_dict
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/timm/utils/model.py", line 8, in <module>
+    from torchvision.ops.misc import FrozenBatchNorm2d
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torchvision/__init__.py", line 10, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torchvision/models/convnext.py", line 9, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torchvision/ops/__init__.py", line 23, in <module>
+    from .poolers import MultiScaleRoIAlign
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torchvision/ops/poolers.py", line 10, in <module>
+    from .roi_align import roi_align
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torchvision/ops/roi_align.py", line 7, in <module>
+    from torch._dynamo.utils import is_compile_supported
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/__init__.py", line 13, in <module>
+    from . import (
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/aot_compile.py", line 15, in <module>
+    from . import convert_frame
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 57, in <module>
+    from torch._dynamo.symbolic_convert import TensorifyState
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 59, in <module>
+    from . import (
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/trace_rules.py", line 58, in <module>
+    from .variables import (
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/variables/__init__.py", line 19, in <module>
+    from .base import VariableTracker
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/variables/base.py", line 650, in <module>
+    from . import builder
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 94, in <module>
+    from ..side_effects import SideEffects
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/side_effects.py", line 34, in <module>
+    from torch._dynamo.variables.misc import AutogradFunctionContextVariable
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/variables/misc.py", line 61, in <module>
+    from .functions import NestedUserFunctionVariable, UserFunctionVariable
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/_dynamo/variables/functions.py", line 88, in <module>
+    from torch.distributed.fsdp._fully_shard import _fsdp_param_group
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py", line 1, in <module>
+    from ._flat_param import FlatParameter as FlatParameter
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/fsdp/_flat_param.py", line 33, in <module>
+    from ._fsdp_extensions import (
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/fsdp/_fsdp_extensions.py", line 6, in <module>
+    from torch.distributed._shard.sharded_tensor.api import ShardedTensor
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/_shard/__init__.py", line 1, in <module>
+    from .api import _shard_tensor, load_with_process_group, shard_module, shard_parameter
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/_shard/api.py", line 9, in <module>
+    from torch.distributed._shard.sharded_tensor import ShardedTensor
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/_shard/sharded_tensor/__init__.py", line 8, in <module>
+    from .api import (
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/_shard/sharded_tensor/api.py", line 32, in <module>
+    from .reshard import reshard_local_shard, reshuffle_local_shard
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/_shard/sharded_tensor/reshard.py", line 13, in <module>
+    from torch.distributed.nn.functional import all_to_all, all_to_all_single
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/nn/__init__.py", line 7, in <module>
+    from .api.remote_module import RemoteModule
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/nn/api/remote_module.py", line 15, in <module>
+    from torch.distributed.nn.jit import instantiator
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/site-packages/torch/distributed/nn/jit/instantiator.py", line 21, in <module>
+    _TEMP_DIR = tempfile.TemporaryDirectory()
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/tempfile.py", line 835, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+  File "/home/gpuuser0/gpuuser0_a/miniconda3/envs/rohitg/lib/python3.10/tempfile.py", line 384, in mkdtemp
+    _os.mkdir(file, 0o700)
+OSError: [Errno 28] No space left on device: '/tmp/tmpo3l8eg0a'
