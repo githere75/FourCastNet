@@ -24,11 +24,8 @@ def autoregressive_rollout(model, x0, steps):
     x0: [1, C, H, W]
     returns list of predictions for each step
     """
-    preds = []
     x = x0
-    for _ in range(steps):
-        x = model(x)
-        preds.append(x)
+    preds = [x:=model(x) for _ in range(steps)]
     return preds
 
 # --------------------------------------------------
